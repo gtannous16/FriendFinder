@@ -184,7 +184,52 @@
         </button>
         <br>
     </div>
+    <!--javascript-->
+    <script type="text/javascript">
+    //name&picture link has been typed in
+    $('#submit').on('click',function() {
+        function verifyForm() {
+            var isVerified = true;
+            $('.form-control').each(function(){
+                if ($(this).val() === '') {
+                    isVerified = false;
+                }
+            });
+            $('.chosen-select').each(function(){
+                if ($(this).val() === '') {
+                    isVerified = false;
+                }
+            });
+            return isVerified;
+        }
+        //if all answers are filled in
+        if (verifyForm() == true) {
+            //creates new user
+            var newUser = {
+                name: $('#name').val().trim(),
+                photo: $('#picture').val().trim(),
+                scores: [
+                    $('#Q1').val(),
+                    $('#Q2').val(),
+                    $('#Q3').val(),
+                    $('#Q4').val(),
+                    $('#Q5').val(),
+                    $('#Q6').val(),
+                    $('#Q7').val(),
+                    $('#Q8').val(),
+                    $('#Q9').val(),
+                    $('#Q10').val(),
+                ]
+            };
+            //current url of website
+            var URL = window.location.origin;
+            console.log(newUser)
+            //ajax posts the data to friends API
+            
+        }
+    });
     
+    </script>
     <!--footer-->
     <footer class= "footer text-center">
         <div class = "container">
