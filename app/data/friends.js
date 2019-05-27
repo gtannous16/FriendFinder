@@ -2,6 +2,7 @@ var friendsList = [
     {
         "name": "Monica Geller",
         "photo":"https://1.bp.blogspot.com/-vnsJ5BiF4-M/WNsT_z6wD6I/AAAAAAAAOXo/qstUVqqmBB8iUhMF8L82V_3KFAfhyDc6wCLcB/s320/6.png",
+        "link":"https://friends.fandom.com/wiki/Monica_Geller",
         "scores":[
             "3",
             "1",
@@ -18,6 +19,7 @@ var friendsList = [
     {
         "name": "Ross Geller",
         "photo":"https://4.bp.blogspot.com/-dZ6Rn17bva0/WNsT_Zr9MSI/AAAAAAAAOXU/LwiZPJ5PowQ-Z5tmo1RW5rVYFehBxGpoQCLcB/s320/3.png",
+        "link":"https://friends.fandom.com/wiki/Ross_Geller",
         "scores":[
             "2",
             "5",
@@ -34,6 +36,7 @@ var friendsList = [
     {
         "name": "Rachel Green",
         "photo":"https://1.bp.blogspot.com/-cjX-M_LZeFU/WNsT_TEAJOI/AAAAAAAAOXc/5P_syqjudxQXuSAPSHtWnlxSa4t-W-MmgCLcB/s320/1.png",
+        "link":"https://friends.fandom.com/wiki/Rachel_Green",
         "scores":[
             "5",
             "1",
@@ -50,6 +53,7 @@ var friendsList = [
     {
         "name": "Joey Tribbiani",
         "photo":"https://4.bp.blogspot.com/-mnsUOK2mhXg/WNsT_whRdLI/AAAAAAAAOXk/qx5tKr5ofHgqkLcVwsbpEgQyVvlFOq7yQCLcB/s320/5.png",
+        "link":"https://friends.fandom.com/wiki/Joey_Tribbiani",
         "scores":[
             "1",
             "1",
@@ -66,6 +70,7 @@ var friendsList = [
     {
         "name": "Chandler Bing",
         "photo":"https://4.bp.blogspot.com/-NrDriR-OK88/WNsT_WXXfwI/AAAAAAAAOXY/ddSB9FDVoNsFt65NxXrTeQuz6ujPR6IvgCLcB/s320/2.png",
+        "link":"https://friends.fandom.com/wiki/Chandler_Bing",
         "scores":[
             "1",
             "2",
@@ -82,6 +87,7 @@ var friendsList = [
     {
         "name": "Phoebe Buffay",
         "photo":"https://1.bp.blogspot.com/-D1uuTO7ZEIM/WNsT_hC2nBI/AAAAAAAAOXg/7dvWZ6gkz0YfcesQVEITRw5rcnwzJ6CxgCLcB/s320/4.png",
+        "link":"https://friends.fandom.com/wiki/Phoebe_Buffay",
         "scores":[
             "1",
             "1",

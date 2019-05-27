@@ -41,9 +41,13 @@
         <br>
         <input type="text" name="" id="name" class="form-control" required>
         <br>
-        <h4>LinkedIn or Facebook Link (Required)</h4>
+        <h4>Picture Link (Required)</h4>
         <br>
         <input type="text" name="" id="picture" class="form-control" required>
+        <br>
+        <h4>LinkedIn or Facebook Link (Required)</h4>
+        <br>
+        <input type="text" name="" id="link" class="form-control" required>
         <hr>
         <br>
         <!--Questions-->
@@ -208,6 +212,7 @@
                     <div class="modal-body">
                         <h2 id="matchname"></h2>
                         <h2 id="display-content"></h2>
+                        <p><a id="linkInput" href="" target="_blank"></a></p>
                         <img id="matchpic" src="" alt="">
                     </div>
                     <div class="modal-footer">
@@ -242,6 +247,7 @@
                     var newUser = {
                         name: $('#name').val().trim(),
                         photo: $('#picture').val().trim(),
+                        link: $('#link').val().trim(),
                         scores: [
                             $('#q1').val(),
                             $('#q2').val(),
@@ -263,6 +269,7 @@
                         //Grab the result from the AJAX post so that the best match's name and photo are displayed.
                         $("#matchname").text(data.name);
                         $("#matchpic").attr("src", data.photo);
+                        $("#linkInput").attr("href", data.link);
                         // console.log("survey.html", data);
                     });
                     // Show the modal with the best match
@@ -270,6 +277,7 @@
                     //clear form after submission
                     $('#name').val("");
                     $('#picture').val("");
+                    $('#link').val("");
                     $('#q1').val("");
                     $('#q2').val("");
                     $('#q3').val("");
