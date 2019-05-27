@@ -4,7 +4,7 @@ var path = require("path");
 
 var app = express();
 
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 5500;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
