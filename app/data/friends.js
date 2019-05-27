@@ -96,3 +96,5 @@ var FriendsList = [
         ]
     }
 ]
+module.exports = FriendsList;
+console.log(FriendsList);
