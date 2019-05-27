@@ -1,4 +1,4 @@
-var friendList = [
+var friendsList = [
     {
         "name": "Monica Geller",
         "photo":"https://1.bp.blogspot.com/-vnsJ5BiF4-M/WNsT_z6wD6I/AAAAAAAAOXo/qstUVqqmBB8iUhMF8L82V_3KFAfhyDc6wCLcB/s320/6.png",
@@ -96,6 +96,6 @@ var friendList = [
         ]
     }
 ]
-module.exports = friendList;
+module.exports = friendsList;
 
-// console.log(friendList);
+console.log(friendsList);
