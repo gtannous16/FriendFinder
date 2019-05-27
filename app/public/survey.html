@@ -222,22 +222,22 @@
             //on submit
             $("#submit").on("click", function () {
                 //verify 
-                function verifyForm() {
-                    var isVerified = true;
+                function validateForm() {
+                    var isValid = true;
                     $('.form-control').each(function () {
                         if ($(this).val() === '') {
-                            isVerified = false;
+                            isValid = false;
                         }
                     });
                     $('.chosen-select').each(function () {
                         if ($(this).val() === "") {
-                            isVerified = false;
+                            isValid = false;
                         }
                     });
-                    return isVerified;
+                    return isValid;
                 }
                 //if everything is filled
-                if (verifyForm() == true) {
+                if (validateForm() == true) {
                     //creates a new user
                     var newUser = {
                         name: $('#name').val().trim(),
