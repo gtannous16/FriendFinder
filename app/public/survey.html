@@ -13,7 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
      crossorigin="anonymous"></script>
      <!--GoogleFonts-->  
-     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Merriweather&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Ranga|Rock+Salt&display=swap" rel="stylesheet">
      <!--Styling-->
      <link rel="stylesheet" type="text/css" href="CSS/reset.css">
      <link rel="stylesheet" type="text/css" href="CSS/style.css">
@@ -22,18 +22,24 @@
 <body>
    <!--display-->
    <div class="jumbotron">
-        <h1 class="display-4">FRIENDS FINDER</h1>
-        <p class="lead">Complete The Survey to Find Your Friend Match!</p>
+        <h1 class="display-4">F R I E N D S </h1>
+        <br>
+        <br>
+        <h1 class="display-4">F I N D E R</h1>
         <hr class="my-4">
+        <p class="lead">Complete The Survey to Find Your Friends Match!</p>
+        
     </div>
     <!--survey-->
-    <div class=" container form">
+    <div class=" container form" id="container">
         <h3><strong>Please Answer Some Questions About Yourself!</strong></h3>
         <br>
         <h4>Name (Required)</h4>
+        <br>
         <input type="text" name="" id="name" class="form-control" required>
         <br>
         <h4>Picture Link (Required)</h4>
+        <br>
         <input type="text" name="" id="picture" class="form-control" required>
         <hr>
         <br>
@@ -182,7 +188,33 @@
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
                 aria-hidden="true"></i> Submit
         </button>
-        <br>
+       
+    <footer class= "footer text-center">
+        <div class = "ftcontainer">
+            <p><a href="https://github.com/gtannous16/FriendFinder">GitHub Repo</a>
+            <br> &copy; 2019 Gabriella Tannous</p>
+        </div>
+    </footer>
+</div>
+    <!--modal-->
+    <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title"><strong>Meet your Friends Match!</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="matchname"></h2>
+                    <h2 id="display-content"></h2>
+                    <img id="matchpic" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
     <!--javascript-->
     <script type="text/javascript">
@@ -226,16 +258,33 @@
             console.log(newUser)
             //ajax posts the data to friends API
 
-        }
-    });
-    
+        
+        $.post(URL + "/api/friends", newUser, function(data){
+            $("#matchname").text(data.name);
+            $("#matchpic").attr("src",data.photo);
+        });
+        $('.modal').modal();
+
+        $('#name').val("");
+                    $('#picture').val("");
+                    $('#q1').val("");
+                    $('#q2').val("");
+                    $('#q3').val("");
+                    $('#q4').val("");
+                    $('#q5').val("");
+                    $('#q6').val("");
+                    $('#q7').val("");
+                    $('#q8').val("");
+                    $('#q9').val("");
+                    $('#q10').val("");
+
+    }else {
+                    alert("Please Complete ALL missing fields!")
+    }
+
+});
     </script>
     <!--footer-->
-    <footer class= "footer text-center">
-        <div class = "container">
-            <p><a href="https://github.com/gtannous16/FriendFinder">GitHub Repo</a>
-            <br> &copy; 2019 Gabriella Tannous</p>
-        </div>
-    </footer>
+
 </body>
 </html>

@@ -2,3 +2,62 @@ body{
     background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4hjc3lgBCtV_RRc2VkQuLeZoWNpmea4esOk2_SAuDb6017eZV")
    
 }
+.jumbotron{
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    background-color: rgb(209, 106, 106);
+    color: rgb(228, 226, 123);
+    margin-left: 20%;
+    margin-right:20%;
+    margin-top: 2%;
+    border-radius: 20%;
+    border: solid rgb(76, 206, 232) 4px;
+}
+
+.btn-primary{
+    background-color: rgb(76, 206, 232);
+    border-color: rgb(132, 202, 215);
+    
+}
+.container{
+    background-color:rgb(209, 106, 106);
+    width:60%;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:30px;
+    text-align: center;
+    color: white;
+    border-radius: 10%;
+    border: solid rgb(76, 206, 232) 4px;
+}
+a{  color: rgb(76, 206, 232);
+
+}
+.btn-block {
+    width: 14%;
+    margin-left: 288px;
+    margin-top:15px;
+}
+footer{
+    padding-bottom:20px;
+    
+}
+a:hover{
+    color:rgb(228, 226, 123);
+}
+.btn-primary:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(228, 226, 123);
+    border-color: rgb(228, 226, 123);
+}
+#chosen-select{
+    background-color: rgba(228, 226, 123, 0.868); 
+}
+.form-control{
+    width:50%;
+    margin-left: 169px;
+}
+.ftcontainer{
+    margin-top:50px;
+    font-family: 'Times New Roman', Times, serif;
+}
