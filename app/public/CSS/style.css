@@ -35,8 +35,8 @@ a{  color: rgb(76, 206, 232);
 }
 .btn-block {
     width: 14%;
-    margin-left: 288px;
     margin-top:15px;
+    margin-left:390px;
 }
 footer{
     padding-bottom:20px;
@@ -50,14 +50,30 @@ a:hover{
     background-color: rgb(228, 226, 123);
     border-color: rgb(228, 226, 123);
 }
-#chosen-select{
+.chosen-select{
     background-color: rgba(228, 226, 123, 0.868); 
+    color:black;
 }
 .form-control{
-    width:50%;
-    margin-left: 169px;
+    width:100%;
+    background-color: rgba(228, 226, 123, 0.868); 
+    color:black;
+    text-align: center;
 }
 .ftcontainer{
     margin-top:50px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.btn-default {
+    background-color: rgb(76, 206, 232);
+    border-color: rgb(132, 202, 215);
+    color:white;
+}
+.btn-default:hover{
+    background-color: rgb(228, 226, 123);
+    border-color: rgb(228, 226, 123);
+}
+.modal-content{
+    background-color: rgb(209, 106, 106);
 }

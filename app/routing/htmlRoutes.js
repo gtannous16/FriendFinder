@@ -1,10 +1,16 @@
+//Dependency
 var path = require('path');
+//route
+module.exports = function (app) {
 
-module.exports = function(app){
-    app.get('/survey', function(req, res){
+    //GET request 
+    app.get('/survey', function (req, res) {
         res.sendFile(path.join(__dirname + '/../public/survey.html'));
     });
-    app.use(function(req, res){
+
+    // default to home
+    app.use(function (req, res) {
         res.sendFile(path.join(__dirname + '/../public/home.html'));
     });
+
 }
