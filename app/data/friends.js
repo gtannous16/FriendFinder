@@ -104,4 +104,4 @@ var friendsList = [
 ]
 module.exports = friendsList;
 
-console.log(friendsList);
+//console.log(friendsList);
