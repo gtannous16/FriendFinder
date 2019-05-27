@@ -11,6 +11,6 @@ Live Link: https://friend-finder16.herokuapp.com/
 Friends TV show!
 
 ## Technical Details
-a GET route to home is /home
-a GET route to the survey is /survey
-a GET route to the data is /api/friends
+* a GET route to home is /home
+* a GET route to the survey is /survey
+* a GET route to the data is /api/friends
