@@ -6,7 +6,7 @@ module.exports = function (app) {
     //a GET, shows all friends
     app.get('/api/friends', function (req, res) {
         res.json(friendsList);
-    });
+    }); 
 
     app.post('/api/friends', function (req, res) {
         //grabs the new friend's scores to compare with friends in friendsList array
