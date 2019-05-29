@@ -3,7 +3,7 @@ body{
     font-family: 'Kalam', cursive;
 }
 .jumbotron{
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Rock Salt', cursive;  
     text-align: center;
     background-color: rgb(209, 106, 106);
     color: rgb(228, 226, 123);
@@ -33,11 +33,7 @@ body{
 a{  color: rgb(76, 206, 232);
 
 }
-.btn-block {
-    width: 14%;
-    margin-top:15px;
-    margin-left:340px;
-}
+
 footer{
     padding-bottom:20px;
     
@@ -76,4 +72,7 @@ a:hover{
 }
 .modal-content{
     background-color: rgb(209, 106, 106);
+}
+.center{
+    text-align: center;
 }
